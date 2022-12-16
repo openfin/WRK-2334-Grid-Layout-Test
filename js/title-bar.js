@@ -1,4 +1,6 @@
 import { html, render } from 'https://unpkg.com/lit-html@1.0.0/lit-html.js';
+import { DifferentLayout } from "./differentLayout.js";
+
 
 //Our Title bar element
 class TitleBar extends HTMLElement {
@@ -40,6 +42,7 @@ class TitleBar extends HTMLElement {
                     <div id="title"></div>
                 </div>
                 <div id="buttons-wrapper">
+                    <div class="button" title="Add Views" id="add-views-button" style="display: flex; justify-content: center;align-items: center" @click=${this.addViews}>+</div>
                     <div class="button" title="Toggle Theme" id="theme-button" @click=${this.toggleTheme}></div>
                     <div class="button" title="Toggle Sidebar" id="menu-button" @click=${this.toggleMenu}></div>
                     <div class="button" title="Toggle Layout Lock" id="lock-button" @click=${this.toggleLockedLayout}></div>
@@ -85,6 +88,11 @@ class TitleBar extends HTMLElement {
             });
         }
     };
+
+    addViews = async() => {
+
+        await fin.Platform.Layout.getCurrentSync().replace(DifferentLayout);
+    }
 
     toggleTheme = async () => {
         let themeName = this.DARK_THEME;
