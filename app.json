@@ -16,7 +16,7 @@
         "providerUrl": "http://localhost:5555/provider.html",
         "permissions": {
             "ExternalWindow": {
-              	"wrap": true
+                "wrap": true
             },
             "System": {
                 "getAllExternalWindows": true,
@@ -82,6 +82,181 @@
                                         "processAffinity": "ps_1",
                                         "url": "https://google.com"
                                     }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Seed Window 2",
+                "layout": {
+                    "content": [
+                        {
+                            "type": "column",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "height": 17,
+                                    "componentState": {
+                                        "title": "third",
+                                        "name": "third",
+                                        "url": "https://www.iana.org/domains/reserved"
+                                    }
+                                },
+                                {
+                                    "type": "row",
+                                    "content": [
+                                        {
+                                            "type": "component",
+                                            "componentName": "view",
+                                            "width": 25,
+                                            "componentState": {
+                                                "title": "third2",
+                                                "name": "third2",
+                                                "url": "https://www.iana.org/domains/reserved"
+                                            }
+                                        },
+                                        {
+                                            "type": "stack",
+                                            "content": [
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "third3",
+                                                        "name": "third3",
+                                                        "url": "https://www.iana.org/domains/reserved"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "third4",
+                                                        "name": "third4",
+                                                        "url": "https://www.iana.org/domains/reserved"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Window with lots of windows",
+                "layout": {
+                    "content": [
+                        {
+                            "type": "column",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "height": 15,
+                                    "componentState": {
+                                        "title": "page2",
+                                        "name": "page2",
+                                        "url": "https://www.bbc.co.uk/"
+                                    }
+                                },
+                                {
+                                    "type": "row",
+                                    "content": [
+                                        {
+                                            "type": "stack",
+                                            "width": 20,
+                                            "content": [
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page21",
+                                                        "name": "page21",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page23",
+                                                        "name": "page23",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "column",
+                                            "content": [
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page24",
+                                                        "name": "page24",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page25",
+                                                        "name": "page25",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "stack",
+                                            "content": [
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page26",
+                                                        "name": "page26",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page27",
+                                                        "name": "page27",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page28",
+                                                        "name": "page28",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "component",
+                                                    "componentName": "view",
+                                                    "componentState": {
+                                                        "title": "page29",
+                                                        "name": "page29",
+                                                        "url": "https://www.bbc.co.uk/"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
                             ]
                         }
